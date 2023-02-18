@@ -146,5 +146,13 @@ app_license = "MIT"
 
 fixtures = [
     "Custom Field",
-    "Translation"
+    "Translation", 
+    {
+    "dt": "Property Setter",
+    "filters": [
+        [
+            "doc_type",
+            "in",
+            ("Item"),],],
+    },
 ] 
