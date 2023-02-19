@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include alshamoos *.css
+recursive-include alshamoos *.csv
+recursive-include alshamoos *.html
+recursive-include alshamoos *.ico
+recursive-include alshamoos *.js
+recursive-include alshamoos *.json
+recursive-include alshamoos *.md
+recursive-include alshamoos *.png
+recursive-include alshamoos *.py
+recursive-include alshamoos *.svg
+recursive-include alshamoos *.txt
+recursive-exclude alshamoos *.pyc
