@@ -14,7 +14,11 @@ frappe.ui.form.on('Barcode Generator', {
 			args: { item_code: frm.doc.item_code },
 			callback: function (response4) {
 				if (response4.message) {
-					frm.doc.item_price = response4.message
+					frm.doc.item_price = response4.message;
+					frm.refresh_fields()
+				}
+				else {
+					frm.doc.item_price = '';
 					frm.refresh_fields()
 				}
 			}
