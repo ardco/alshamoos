@@ -17,5 +17,7 @@ alshamoos/alshamoos/__init__.py
 alshamoos/config/__init__.py
 alshamoos/config/desktop.py
 alshamoos/config/docs.py
+alshamoos/fixtures/custom_field.json
+alshamoos/fixtures/translation.json
 alshamoos/templates/__init__.py
 alshamoos/templates/pages/__init__.py
