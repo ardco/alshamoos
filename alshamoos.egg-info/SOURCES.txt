@@ -3,10 +3,15 @@ README.md
 license.txt
 requirements.txt
 setup.py
+alshamoos/README.md
 alshamoos/__init__.py
 alshamoos/hooks.py
+alshamoos/license.txt
 alshamoos/modules.txt
 alshamoos/patches.txt
+alshamoos/replace_abbr.py
+alshamoos/requirements.txt
+alshamoos/setup.py
 alshamoos.egg-info/PKG-INFO
 alshamoos.egg-info/SOURCES.txt
 alshamoos.egg-info/dependency_links.txt
@@ -14,10 +19,30 @@ alshamoos.egg-info/not-zip-safe
 alshamoos.egg-info/requires.txt
 alshamoos.egg-info/top_level.txt
 alshamoos/alshamoos/__init__.py
+alshamoos/alshamoos/hooks.py
+alshamoos/alshamoos/modules.txt
+alshamoos/alshamoos/patches.txt
+alshamoos/alshamoos.egg-info/SOURCES.txt
+alshamoos/alshamoos.egg-info/dependency_links.txt
+alshamoos/alshamoos.egg-info/requires.txt
+alshamoos/alshamoos.egg-info/top_level.txt
+alshamoos/alshamoos/alshamoos/__init__.py
+alshamoos/alshamoos/config/__init__.py
+alshamoos/alshamoos/config/desktop.py
+alshamoos/alshamoos/config/docs.py
+alshamoos/alshamoos/fixtures/custom_field.json
+alshamoos/alshamoos/fixtures/property_setter.json
+alshamoos/alshamoos/fixtures/translation.json
+alshamoos/alshamoos/templates/__init__.py
+alshamoos/alshamoos/templates/pages/__init__.py
 alshamoos/config/__init__.py
 alshamoos/config/desktop.py
 alshamoos/config/docs.py
 alshamoos/fixtures/custom_field.json
+<<<<<<< HEAD
+=======
+alshamoos/fixtures/property_setter.json
+>>>>>>> upstream/main
 alshamoos/fixtures/translation.json
 alshamoos/templates/__init__.py
 alshamoos/templates/pages/__init__.py
