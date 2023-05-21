@@ -21,7 +21,10 @@ class BarcodeGenerator(Document):
 	
 	@frappe.whitelist()
 	def get_price(self, item_code):
-		return frappe.db.sql(f'''select price_list_rate from `tabItem Price` where item_code="{item_code}";''')
+		try:
+			return frappe.db.sql(f'''select price_list_rate from `tabItem Price` where item_code="{item_code}";''')
+		except IndexError:
+			return False
 	
 	@frappe.whitelist()
 	def generate_barcode(self):
