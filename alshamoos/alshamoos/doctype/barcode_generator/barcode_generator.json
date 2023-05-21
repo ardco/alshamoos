@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "creation": "2023-05-21 01:33:26.775712",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "column_break_tziev",
+  "item_name",
+  "section_break_4xble",
+  "barcode_code",
+  "barcode_image",
+  "column_break_is44n",
+  "price_list",
+  "item_price",
+  "barcodes",
+  "uom",
+  "new_barcode"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tziev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.item_code)",
+   "fieldname": "barcodes",
+   "fieldtype": "Select",
+   "label": "Barcodes"
+  },
+  {
+   "fieldname": "section_break_4xble",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "barcode_code",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Barocde Code",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.item_code",
+   "fieldname": "barcode_image",
+   "fieldtype": "Image",
+   "label": "Barcode Image",
+   "options": "barcode_code"
+  },
+  {
+   "fieldname": "column_break_is44n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "item_price",
+   "fieldtype": "Currency",
+   "label": "Item Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Unit of Measure",
+   "options": "UOM"
+  },
+  {
+   "default": "0",
+   "fieldname": "new_barcode",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "New Barcode?",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-21 04:24:31.053718",
+ "modified_by": "Administrator",
+ "module": "Alshamoos",
+ "name": "Barcode Generator",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
