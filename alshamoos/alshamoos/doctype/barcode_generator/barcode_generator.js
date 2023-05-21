@@ -8,6 +8,18 @@ frappe.ui.form.on('Barcode Generator', {
 	item_code: function (frm) {
 		frm.doc.item_price = ''
 
+		frappe.call({
+			doc: frm.doc,
+			method: 'get_price',
+			args: { item_code: frm.doc.item_code },
+			callback: function (response4) {
+				if (response4.message) {
+					frm.doc.item_price = response4.message
+					frm.refresh_fields()
+				}
+			}
+		})
+
 		if (frm.doc.item_code)
 			frappe.call({
 				doc: frm.doc,
@@ -17,19 +29,6 @@ frappe.ui.form.on('Barcode Generator', {
 					if (response1.message) {
 						// msgprint('Has barcode')
 						frm.doc.new_barcode = 0
-
-						frappe.call({
-							doc: frm.doc,
-							method: 'get_price',
-							args: { item_code: frm.doc.item_code },
-							callback: function (response4) {
-								if (response4.message) {
-									frm.doc.item_price = response4.message
-									frm.refresh_fields()
-								}
-							}
-						})
-
 
 						frappe.call({
 							doc: frm.doc,
