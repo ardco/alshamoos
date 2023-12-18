@@ -5,6 +5,7 @@ requirements.txt
 setup.py
 alshamoos/README.md
 alshamoos/__init__.py
+alshamoos/api.py
 alshamoos/hooks.py
 alshamoos/license.txt
 alshamoos/modules.txt
@@ -30,6 +31,17 @@ alshamoos/alshamoos/alshamoos/__init__.py
 alshamoos/alshamoos/config/__init__.py
 alshamoos/alshamoos/config/desktop.py
 alshamoos/alshamoos/config/docs.py
+alshamoos/alshamoos/doctype/__init__.py
+alshamoos/alshamoos/doctype/barcode_generator/__init__.py
+alshamoos/alshamoos/doctype/barcode_generator/barcode_generator.js
+alshamoos/alshamoos/doctype/barcode_generator/barcode_generator.json
+alshamoos/alshamoos/doctype/barcode_generator/barcode_generator.py
+alshamoos/alshamoos/doctype/barcode_generator/test_barcode_generator.py
+alshamoos/alshamoos/doctype/item_barcode_generator_counter/__init__.py
+alshamoos/alshamoos/doctype/item_barcode_generator_counter/item_barcode_generator_counter.js
+alshamoos/alshamoos/doctype/item_barcode_generator_counter/item_barcode_generator_counter.json
+alshamoos/alshamoos/doctype/item_barcode_generator_counter/item_barcode_generator_counter.py
+alshamoos/alshamoos/doctype/item_barcode_generator_counter/test_item_barcode_generator_counter.py
 alshamoos/alshamoos/fixtures/custom_field.json
 alshamoos/alshamoos/fixtures/property_setter.json
 alshamoos/alshamoos/fixtures/translation.json

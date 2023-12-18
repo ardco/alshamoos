@@ -6,6 +6,7 @@
  "engine": "InnoDB",
  "field_order": [
   "item_code",
+  "price_test",
   "column_break_tziev",
   "item_name",
   "section_break_4xble",
@@ -69,15 +70,14 @@
   {
    "fieldname": "price_list",
    "fieldtype": "Link",
-   "hidden": 1,
    "label": "Price List",
    "options": "Price List"
   },
   {
+   "depends_on": "eval:doc.item_code",
    "fieldname": "item_price",
    "fieldtype": "Currency",
-   "label": "Item Price",
-   "read_only": 1
+   "label": "Item Price"
   },
   {
    "fieldname": "uom",
@@ -93,11 +93,16 @@
    "hidden": 1,
    "label": "New Barcode?",
    "read_only": 1
+  },
+  {
+   "fieldname": "price_test",
+   "fieldtype": "Float",
+   "label": "Price_Test"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-21 04:24:31.053718",
+ "modified": "2023-12-18 10:30:56.267709",
  "modified_by": "Administrator",
  "module": "Alshamoos",
  "name": "Barcode Generator",
